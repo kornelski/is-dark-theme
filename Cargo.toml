@@ -1,0 +1,13 @@
+[package]
+name = "is-dark-theme"
+version = "1.0.0"
+description = "Check if macOS is configured to use a Dark Mode appearance"
+repository = "https://github.com/kornelski/is-dark-theme.git"
+homepage = "https://lib.rs/crates/is-dark-theme"
+license = "Apache-2.0 OR MIT"
+categories = ["os::macos-apis", "gui"]
+keywords = ["dark", "light", "appearance", "color-scheme", "AppleInterfaceStyle"]
+edition = "2021"
+
+[target.'cfg(target_vendor = "apple")'.dependencies]
+core-foundation-sys = "0.8.6"
